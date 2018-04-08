@@ -1,0 +1,110 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>  
+    <title></title>  
+    <meta charset="utf-8" />  
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>  
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+	<style>
+	.mode{
+		height:50%;
+		margin-top:200px;
+		margin-left:100px;
+		width:30%
+	}
+	html,body {
+		height:100%;
+		background-image: url('img/cover.png');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;	
+	}
+	.photo{
+		margin-top:40%;
+		margin-left:20%;
+	}
+	.pics{
+		position: relative;	
+	float: none;  
+    display:inline;  
+    margin-left: auto;  
+    margin-right: auto;
+	}
+	
+}
+	</style>
+</head>  
+<body>      
+ <div class="container-fluid">  
+        <div class="row" >  
+            <div class="col-md-2" style="margin-top:60px">  
+                <ul id="main-nav" class="nav nav-tabs nav-stacked" >  
+                    <li class="active" >  
+                        <a href="#">  
+                            <i class="glyphicon glyphicon-th-large"></i>  
+                            profile  
+                        </a>  
+                    </li>  
+					<li>  
+                        <a href="changePhoto.html">  
+							<img src="photo.PNG" class="thumbnail">
+                        </a>  
+                    </li> 
+					<li>  
+                        <a href="./grid.html">  
+                            <i class="glyphicon glyphicon-globe"></i>  
+                            bronze tier 
+                            
+                        </a>  
+                    </li>  
+                    <li>  
+                        <a href="./charts.html">  
+                            <i class="glyphicon glyphicon-calendar"></i>  
+                            512 cookies
+                        </a>  
+                    </li>  
+                    <li>  
+                        <a href="#">  
+                            <i class="glyphicon glyphicon-fire"></i>  
+                            messages  
+							<span class="label label-warning pull-right">5</span>  
+                        </a>  
+                    </li>  
+                    <li>  
+                        <a href="#systemSetting" class="nav-header collapsed" data-toggle="collapse">  
+                            <i class="glyphicon glyphicon-cog"></i>  
+                            settings
+                            <span class="pull-right glyphicon glyphicon-chevron-down"></span>  
+                        </a>  
+                        <ul id="systemSetting" class="nav nav-list collapse secondmenu" style="height: 0px;">   
+                            <li><a href="#"><i class="glyphicon glyphicon-th-list"></i> background</a></li>  
+                            <li><a href="#"><i class="glyphicon glyphicon-edit"></i> edit password</a></li>  
+                        </ul>  
+                    </li>  
+                    <li>  
+                        <a href="signIn.html">  
+                            <i class="glyphicon glyphicon-credit-card"></i>  
+                            log out 
+                        </a>  
+                    </li>  
+                    
+                </ul>  
+            </div>  
+            <div class="col-md-10 ">  
+				<!--
+				<div class = "pics">
+					<img src="photo.PNG" class="thumbnail">
+				</div>
+				-->
+				<!--注意上下两个div的位置关系并未定义，期望使用bootstrap的网格-->
+                <div class="file-loading photo">
+				<input id="uploadFile" type="file" multiple class="file" data-overwrite-initial="false" data-min-file-count="2">
+				</div>
+            </div>
+        </div>  
+    </div>  
+
+</body>
+</html>  

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Bootstrap 模板</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- 引入 Bootstrap -->
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	  <link href="https://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"> 
+      <!-- HTML5 Shiv 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+      <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+      <!--[if lt IE 9]>
+         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+   
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+      <script src="https://code.jquery.com/jquery.js"></script>
+	  <!--倒计时-->
+	  <script type="text/javascript" src="js/kinetic.js"></script>
+	<script type="text/javascript" src="js/jquery.final-countdown.js"></script>
+	<link href="http://fonts.useso.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+	<script src="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert-dev.js"></script>
+	<link href="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/toastr.js/latest/css/toastr.css" rel="stylesheet">
+	<script src="https://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
+	<script type="text/javascript">
+        toastr.options.positionClass = 'toast-bottom-center';
+	</script>
+	  <style type="text/css">  
+			.player1{
+				
+				height:80%;
+				margin-top:80px;
+			}
+			.player2{
+				
+				height:80%;
+				margin-top:80px;
+			}
+			.questions{
+				
+				height:100%;
+				float: none;  
+				display: block;  
+				margin-left: auto;  
+				margin-right: auto; 
+			}
+			<!-->style="border:5px solid red"<-->
+       </style> 
+	  </head>
+   <body>
+       <div class="container">  
+	   <div class="row clearfix" >
+          <div class="col-md-2 column  col-md-offset-1">
+			<div style="margin-top:100px">
+				<img src="photo.PNG" class="thumbnail">
+				<div class="player-info">
+				<p> username</p>
+				<p> tier</p>
+				<p> score</p>
+				</div>
+			</div>
+		  </div>
+		  <div class="col-md-4 column  col-md-offset-1">
+		  
+			<div class="countdown countdown-container container">
+            <div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
+                <div class="wrap">
+                    <div class="inner">
+                        <div id="canvas-seconds" class="clock-canvas"></div>
+                        <div class="text">
+                            <p class="val">0</p>
+                            <p class="type-seconds type-time">SECONDS</p>
+                        </div><!-- /.text -->
+                    </div><!-- /.inner -->
+                </div><!-- /.wrap -->
+            </div><!-- /.clock-item -->
+			</div><!-- /.countdown-wrapper -->
+
+			<div style="margin-top:280px">
+				<div class="question-text"><h3><strong>Which is the capital of China?</strong></h3></div>
+				<ul id="main-nav" class="nav nav-tabs nav-stacked" >  
+				<li>
+				</li>
+					<li>  
+                        <a id="success">  
+                            <i class="glyphicon glyphicon-globe"></i>  
+							A Beijing
+                        </a>  
+                    </li>  
+                    <li>  
+                        <a >  
+                            <i class="glyphicon glyphicon-calendar"></i>  
+                            B Shanghai
+                        </a>  
+                    </li>  
+                    <li>  
+                        <a >  
+                            <i class="glyphicon glyphicon-fire"></i>  
+                            C Xian
+                        </a>  
+                    </li>  
+                    <li>  
+                        <a >  
+                            <i class="glyphicon glyphicon-credit-card"></i>  
+                            D HongKong
+                        </a>  
+                    </li>  
+                </ul>  
+			</div>
+		  </div>
+		  <div class="col-md-2 column  col-md-offset-1" >
+			<div style="margin-top:100px">
+				<img src="photo.PNG" class="thumbnail">
+				<div class="player-info">
+				<p> username</p>
+				<p> tier</p>
+				<p> score</p>
+				<p> run </p>
+				</div>
+			</div>
+		  </div>
+       </div> 
+	</div>	
+	<script src="https://code.jquery.com/jquery.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
+    <script type="text/javascript" src="js/kinetic.js"></script>
+    <script type="text/javascript" src="js/jquery.final-countdown.js"></script>
+    <script type="text/javascript">
+        $('document').ready(function () {
+            'use strict';
+
+            $('.countdown').final_countdown({
+                'start': 1388461010,
+                'end':   1388461320,
+                'now': 1388461010
+            });
+        });
+		
+	$("#success").click(function () {
+            toastr.success('You are right!');
+        });
+    </script>	
+   </body>
+</html>
