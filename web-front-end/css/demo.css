@@ -1,0 +1,127 @@
+ *{margin:0;padding:0;}
+ 
+ 
+ .player1{				
+	height:80%;
+	margin-top:80px;
+}
+.player2{			
+	height:80%;
+	margin-top:80px;
+}
+.questions{
+	position:relative;
+	margin-top:280px;
+	z-index:100;			
+}
+html, body {
+	height: 100%;
+	overflow:hidden;
+}
+
+html {
+	background-image: url('img/cover.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+body {
+	background-color: #FFA07A;
+	background-position: center;
+	background-repeat: repeat;
+	font-family:  sans-serif,'Raleway', 'Arial';
+}
+.middle{
+	position:absolute;
+	top:70%;
+	left:-2%;
+	height:60%;
+	width:100%;
+	z-index:10;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+	background: -webkit-linear-gradient(#fff,#FFA07A); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(#fff,#FFA07A); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(#fff,#FFA07A); /* Firefox 3.6 - 15 */
+	background: linear-gradient(360deg,#fff,#FFA07A); /* 标准的语法 */
+	/*background-image:linear-gradient(40deg, #99CC33, #FF6666,#336699,#FF0033); */
+	
+	border-radius:30px;
+}
+.countdown-container {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index:20;
+
+}
+
+.clock-item .inner {
+	height: 0px;
+	position: relative;	
+	width: 80%;
+	float: none;  
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto; 
+	margin-top: 10%;	
+}
+
+.clock-canvas {
+	background-color: rgba(255, 255, 255, .1);
+	border-radius: 50%;
+	height: 0px;
+	padding-bottom: 100%;
+	float: none;  
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto;  
+}
+.question-text{	
+	font-size: 25px;
+	font-weight: bold;	
+	z-index:20;
+}
+.player-info{
+	float: none;  
+    display: block;  
+    margin-left: 10%;  
+    margin-right: auto; 
+}
+
+.text {
+	color: #fff;	
+	font-size: 30px;
+	font-weight: bold;	
+	margin-top: 50px;
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	width: 100%;
+}
+
+.text .val {
+	font-size: 35px;
+	z-index:20;
+}
+
+.text .type-time {
+	font-size: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.clock-item {
+		margin-bottom: 30px;		
+	}
+}
+
+@media (max-width: 767px) {
+	.clock-item {
+		margin: 0px 30px 30px 30px;
+	}
+}
